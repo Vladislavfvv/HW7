@@ -10,7 +10,13 @@ public class LateBinding {
         // метод для вычисления площади определяется на основе значения ссылки f
         static int GetArea(Shapes f){
             return f.getSquare();// вызов метода вычисления площади
+    }
 
+    static int GetPerimeter(Shapes f){
+        return f.getPerimeter();
+    }
+
+    void connect() {
 
     }
 }
