@@ -1,9 +1,9 @@
-package Shape;
+package Shapes;
 
-public class Rectangle extends Shapes {
+public class Rectangles extends Shapes {
     private int d;
     private int e;
-    Rectangle(int d, int e) {
+    Rectangles(int d, int e) {
         name = "Rectangle";
         this.d = d;
         this.e = e;

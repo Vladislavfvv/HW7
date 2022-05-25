@@ -1,4 +1,4 @@
-package Shape;
+package Shapes;
 
 public class Circles extends Shapes {
     private int r;

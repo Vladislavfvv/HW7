@@ -1,11 +1,11 @@
 package Shapes;
 
-public class Triangle extends Shapes {
+public class Triangles extends Shapes {
     private int a;
     private int b;
     private int c;
 
-    Triangle(int a, int b, int c) {
+    Triangles(int a, int b, int c) {
         name = "Triangle";
         this.a = a;
         this.b = b;
@@ -19,7 +19,8 @@ public class Triangle extends Shapes {
 
     public int getSquare() {
         int p = (a + b + c) / 2;
-        return (int) Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        int result = (int) Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return result;
 
     }
 
