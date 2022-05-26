@@ -2,7 +2,7 @@ package Documents;
 
 import java.sql.Date;
 
-public class FinancialInvoice {
+public class FinancialInvoice implements IRegistr{
     long monthlyTotal;
     Date dateOfDocument;
     int numberOfDocument;
@@ -16,5 +16,15 @@ public class FinancialInvoice {
         this.dateOfDocument = dateOfDocument;
         this.numberOfDocument = numberOfDocument;
         this.departmentCode = departmentCode;
+    }
+
+    @Override
+    public void addDocumentInRegister() {
+
+    }
+
+    @Override
+    public void infoDocument() {
+
     }
 }

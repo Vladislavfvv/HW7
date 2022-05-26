@@ -1,10 +1,16 @@
 package Documents;
 
-public abstract class Registr {
+import java.util.Date;
 
-    abstract void addDocumentInRegister();
-    abstract void infoDocument();
+class Registr {
+    int numDocument;
+    Date dateOfDocument;
+
+     /*void addDocumentInRegister(){};
+     void infoDocument(){};*/
+
+IRegistr[] iRegistrs = new IRegistr[10];
 
 
-    Registr[] registrs = new Registr[10];
+
 }

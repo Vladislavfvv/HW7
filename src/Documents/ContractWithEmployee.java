@@ -2,7 +2,7 @@ package Documents;
 
 import java.util.Date;
 
-public class ContractWithEmployee {
+public class ContractWithEmployee implements IRegistr{
     int numOfDocument;
     Date dateOfDocument;
     Date contractEndDate;
@@ -16,5 +16,15 @@ public class ContractWithEmployee {
         this.dateOfDocument = dateOfDocument;
         this.contractEndDate = contractEndDate;
         this.nameEmployee = nameEmployee;
+    }
+
+    @Override
+    public void addDocumentInRegister() {
+
+    }
+
+    @Override
+    public void infoDocument() {
+
     }
 }

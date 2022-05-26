@@ -2,7 +2,7 @@ package Documents;
 
 import java.util.Date;
 
-public class ContractForSupplyOfGoods extends Registr{
+public class ContractForSupplyOfGoods implements IRegistr{
     int numDocument;
     String typeOfGoods;
     int numberofGoods;
@@ -12,26 +12,22 @@ public class ContractForSupplyOfGoods extends Registr{
     public ContractForSupplyOfGoods() {
     }
 
-    public ContractForSupplyOfGoods(int numDocument, String typeOfGoods, int numberofGoods, Date dateOfDocument) {
+    public ContractForSupplyOfGoods(int numDocument, String typeOfGoods, int numberofGoods) {
         this.numDocument = numDocument;
         this.typeOfGoods = typeOfGoods;
         this.numberofGoods = numberofGoods;
-        this.dateOfDocument = dateOfDocument;
+        this.dateOfDocument = new Date();
     }
 
     @Override
-    void addDocumentInRegister() {
-        for (int i = 0; i < registrs.length-1; i++) {
-            registrs[i] = new Registr();
-
-
-
-        }
-
+    public void addDocumentInRegister() {
+        //for (int i = 0; i < registrs.length-1; i++) {
+        //    registrs[i] = new Registr();
+       // }
     }
 
     @Override
-    void infoDocument() {
+    public void infoDocument() {
         System.out.println();
     }
 }

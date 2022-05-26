@@ -8,6 +8,6 @@ public interface Interface {
         System.out.println("Вы работаете на должности:");
     }
     static void infoPosition(){
-        System.out.println("Вы работаете на должности:");
+        System.out.println("Вас зовут:");
     }
 }
