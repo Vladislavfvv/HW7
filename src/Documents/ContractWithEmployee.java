@@ -10,6 +10,7 @@ public class ContractWithEmployee extends Registr {
     String contractEndDate;
     String nameEmployee;
 
+<<<<<<< HEAD
 
     public ContractWithEmployee(String contractEndDate, String nameEmployee, String date, int num) {
         super();
@@ -68,6 +69,8 @@ public class ContractWithEmployee extends Registr {
         nameEmployee = "Smirnov Sergey";
         iRegistrs temp = new IRegistr(5, dateOfDocument, contractEndDate, nameEmployee);
         return IRegistr ;*/
+=======
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
 
 }
 

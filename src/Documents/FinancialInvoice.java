@@ -5,10 +5,12 @@ import java.util.Date;
 
 public class FinancialInvoice extends Registr{
     float monthlyTotal;
-
     String departmentCode;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
     public FinancialInvoice(float monthlyTotal, String departmentCode, String date, int num) {
         super();
         super.setNumDocument(num);
@@ -16,6 +18,7 @@ public class FinancialInvoice extends Registr{
         this.monthlyTotal = monthlyTotal;
         this.departmentCode = departmentCode;
     }
+<<<<<<< HEAD
 
     @Override
     public String toString() {
@@ -44,4 +47,6 @@ public class FinancialInvoice extends Registr{
         System.out.println("Итоговая сумма за месяц: " + this.monthlyTotal);
         System.out.println("Код департамента: " + this.departmentCode);
     }*/
+=======
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
 }

@@ -9,6 +9,7 @@ public class ContractForSupplyOfGoods extends Registr {
     int numberOfGoods;
 
 
+<<<<<<< HEAD
     //public ContractForSupplyOfGoods(int numDocument, Date dateOfDocument) {
      //   super(numDocument, dateOfDocument);
     //}
@@ -71,4 +72,6 @@ public class ContractForSupplyOfGoods extends Registr {
 
 
    }*/
+=======
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
 }

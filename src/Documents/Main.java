@@ -6,6 +6,7 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         Registr reg = new Registr();
+<<<<<<< HEAD
         FinancialInvoice f = new FinancialInvoice(30000, "cd", "01-01", 1);
         FinancialInvoice f2 = new FinancialInvoice(5050, "cdjhj", "01-01-15", 2);
         ContractForSupplyOfGoods s = new ContractForSupplyOfGoods(  "Gloves", 100, "12-05-22", 3 );
@@ -23,9 +24,20 @@ public class Main {
         //reg.infoDocument(f);
       //  reg.infoDocument(s);
         reg.infoDocument(e);
+=======
+
+//        reg.iRegistrs[0] = new ContractForSupplyOfGoods( 1, new Date(), "Gloves", 100);
+//        reg[1] = new ContractWithEmployee(2, new Date(), "22-10-10", "Ivanov Ivan");
+        FinancialInvoice f = new FinancialInvoice(3,"sd",  "01-01", 1);
+//
+//        IRegistr[] reg2 = new IRegistr[10];
+//        reg2[1] = new ContractForSupplyOfGoods(5, new Date(), "Hats", 1000);
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
 
 
+        reg.addDocumentInRegister(f);
 
+<<<<<<< HEAD
    System.out.println("//////////////////////////");
         for (int i = 0; i < reg.iRegistrs.length; i++) {
             if (reg.iRegistrs[i] != null) {
@@ -53,6 +65,31 @@ public class Main {
             }
         }*/
 
+=======
+        reg.infoDocument(f);
+
+        for (int i = 0; i < reg.iRegistrs.length; i++) {
+            if (reg.iRegistrs[i] != null) {
+                reg.infoDocument(reg.iRegistrs[i]);
+            }
+        }
+//        System.out.println("//////////////////////////");
+//        for (int i = 0; i < Arrays.stream(reg).count(); i++) {
+//            if (reg[i] != null) {
+//                reg[i].infoDocument();
+//            }
+//        }
+//
+//        System.out.println("//////////////////////////");
+//        for (int i = 0; i < reg.length; i++) {
+//            if (reg[i] != null) {
+//                reg[i].toString();
+//            }
+//        }
+//
+//
+//        System.out.println(reg2[1]);
+>>>>>>> a2ef7c2bfe229385ac13f6e37ae52189d4d34c50
 
     }
 }
