@@ -1,5 +1,6 @@
 package Documents;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class ContractForSupplyOfGoods extends Registr {
@@ -8,17 +9,32 @@ public class ContractForSupplyOfGoods extends Registr {
     int numberOfGoods;
 
 
-    public ContractForSupplyOfGoods(int numDocument, Date dateOfDocument) {
-        super(numDocument, dateOfDocument);
-    }
+    //public ContractForSupplyOfGoods(int numDocument, Date dateOfDocument) {
+     //   super(numDocument, dateOfDocument);
+    //}
 
-    public ContractForSupplyOfGoods(int numDocument, Date dateOfDocument, String typeOfGoods, int numberOfGoods) {
-        this(numDocument, dateOfDocument);
+
+
+    public ContractForSupplyOfGoods(String typeOfGoods, int numberOfGoods, String date, int num) {
+        super();
+        super.setNumDocument(num);
+        super.setDateOfDocument(date);
         this.typeOfGoods = typeOfGoods;
         this.numberOfGoods = numberOfGoods;
     }
     @Override
-    public void addDocumentInRegister() {
+    public String toString() {
+        return "ContractForSupplyOfGoods{" +
+                "typeOfGoods='" + typeOfGoods + '\'' +
+                ", numberOfGoods=" + numberOfGoods +
+                ", date='" + getDateOfDocument() + '\'' +
+                ", numberofdocument='" + getNumDocument() + '\'' +
+                //", iRegistrs=" + Arrays.toString(iRegistrs) +
+                '}';
+    }
+/*
+@Override
+    public void addDocumentInRegister(IRegistr iRegistr) {
         for (int i = 0; i < iRegistrs.length; i++) {
           if (iRegistrs[i] == null) {
               iRegistrs[i] = new ContractForSupplyOfGoods(4, new Date(), "Scarfs", 200);
@@ -53,5 +69,6 @@ public class ContractForSupplyOfGoods extends Registr {
             }
         }
 
-   }
+
+   }*/
 }

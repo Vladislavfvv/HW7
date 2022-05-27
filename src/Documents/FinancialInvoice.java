@@ -1,5 +1,6 @@
 package Documents;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class FinancialInvoice extends Registr{
@@ -7,18 +8,27 @@ public class FinancialInvoice extends Registr{
 
     String departmentCode;
 
-    public FinancialInvoice(int numDocument, Date dateOfDocument) {
-        super(numDocument, dateOfDocument);
-    }
 
-    public FinancialInvoice(int numberOfDocument, Date dateOfDocument, float monthlyTotal, String departmentCode) {
-        this(numberOfDocument, dateOfDocument);
+    public FinancialInvoice(float monthlyTotal, String departmentCode, String date, int num) {
+        super();
+        super.setNumDocument(num);
+        super.setDateOfDocument(date);
         this.monthlyTotal = monthlyTotal;
         this.departmentCode = departmentCode;
     }
 
     @Override
-    public void addDocumentInRegister() {
+    public String toString() {
+        return "FinancialInvoice{" +
+                "monthlyTotal=" + monthlyTotal +
+                ", departmentCode='" + departmentCode + '\'' +
+                ", date='" + getDateOfDocument() + '\'' +
+                ", numberofdocument='" + getNumDocument() + '\'' +
+                //", iRegistrs=" + Arrays.toString(iRegistrs) +
+                '}';
+    }
+/* @Override
+    public void addDocumentInRegister(IRegistr iRegistr) {
         for (int i = 0; i < iRegistrs.length; i++) {
             if(iRegistrs[i] == null){
                 iRegistrs[i] = new FinancialInvoice(6, new Date(), 100500, "NewTestCode");
@@ -33,5 +43,5 @@ public class FinancialInvoice extends Registr{
         System.out.println("Дата документа:" + this.dateOfDocument);
         System.out.println("Итоговая сумма за месяц: " + this.monthlyTotal);
         System.out.println("Код департамента: " + this.departmentCode);
-    }
+    }*/
 }

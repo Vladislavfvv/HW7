@@ -1,26 +1,37 @@
 package Documents;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 
-public class ContractWithEmployee extends Registr{
-    SimpleDateFormat formater = new SimpleDateFormat("dd-MM-yyyy");
+public class ContractWithEmployee extends Registr {
+
 
     String contractEndDate;
     String nameEmployee;
 
-    public ContractWithEmployee(int numDocument, Date dateOfDocument) {
-        super(numDocument, dateOfDocument);
-    }
 
-    public ContractWithEmployee(int numDocument, Date dateOfDocument, String contractEndDate, String nameEmployee) {
-        this(numDocument, dateOfDocument);
+    public ContractWithEmployee(String contractEndDate, String nameEmployee, String date, int num) {
+        super();
+        super.setNumDocument(num);
+        super.setDateOfDocument(date);
         this.contractEndDate = contractEndDate;
         this.nameEmployee = nameEmployee;
     }
 
     @Override
-    public void addDocumentInRegister() {
+    public String toString() {
+        return "ContractWithEmployee{" +
+                "contractEndDate='" + contractEndDate + '\'' +
+                ", nameEmployee='" + nameEmployee + '\'' +
+                ", date='" + getDateOfDocument() + '\'' +
+                ", numberofdocument='" + getNumDocument() + '\'' +
+                // ", iRegistrs=" + Arrays.toString(iRegistrs) +
+                '}';
+    }
+/*
+    @Override
+    public void addDocumentInRegister(IRegistr iRegistr) {
         for (int i = 0; i < iRegistrs.length; i++) {
             if(iRegistrs[i] == null){
                 iRegistrs[i] = new ContractWithEmployee(5, new Date(), "22-08-15", "Smirnov Sergey");
@@ -47,7 +58,7 @@ public class ContractWithEmployee extends Registr{
                 ", numDocument=" + numDocument +
                 ", dateOfDocument='" + dateOfDocument + '\'' +
                 '}';
-    }
+    }*/
 
     /* public IRegistr CreateContractWithEmployee(){
         numDocument = 5;
